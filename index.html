@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>sudoku</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/jpd.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	</head>
+
+	<body>
+		<div class="game">
+			<div class="blocks B1">
+				<input type="button" class="celulas L1 C1">
+				<input type="button" class="celulas L1 C2">
+				<input type="button" class="celulas L1 C3">
+				<input type="button" class="celulas L2 C1">
+				<input type="button" class="celulas L2 C2">
+				<input type="button" class="celulas L2 C3">
+				<input type="button" class="celulas L3 C1">
+				<input type="button" class="celulas L3 C2">
+				<input type="button" class="celulas L3 C3">
+			</div>
+			<div class="blocks B2">
+				<input type="button" class="celulas L1 C4">
+				<input type="button" class="celulas L1 C5">
+				<input type="button" class="celulas L1 C6">
+				<input type="button" class="celulas L2 C4">
+				<input type="button" class="celulas L2 C5">
+				<input type="button" class="celulas L2 C6">
+				<input type="button" class="celulas L3 C4">
+				<input type="button" class="celulas L3 C5">
+				<input type="button" class="celulas L3 C6">
+			</div>
+			<div class="blocks B3">
+				<input type="button" class="celulas L1 C7">
+				<input type="button" class="celulas L1 C8">
+				<input type="button" class="celulas L1 C9">
+				<input type="button" class="celulas L2 C7">
+				<input type="button" class="celulas L2 C8">
+				<input type="button" class="celulas L2 C9">
+				<input type="button" class="celulas L3 C7">
+				<input type="button" class="celulas L3 C8">
+				<input type="button" class="celulas L3 C9">
+			</div>
+			<div class="blocks B4">
+				<input type="button" class="celulas L4 C1">
+				<input type="button" class="celulas L4 C2">
+				<input type="button" class="celulas L4 C3">
+				<input type="button" class="celulas L5 C1">
+				<input type="button" class="celulas L5 C2">
+				<input type="button" class="celulas L5 C3">
+				<input type="button" class="celulas L6 C1">
+				<input type="button" class="celulas L6 C2">
+				<input type="button" class="celulas L6 C3">
+			</div>
+			<div class="blocks B5">
+				<input type="button" class="celulas L4 C4">
+				<input type="button" class="celulas L4 C5">
+				<input type="button" class="celulas L4 C6">
+				<input type="button" class="celulas L5 C4">
+				<input type="button" class="celulas L5 C5">
+				<input type="button" class="celulas L5 C6">
+				<input type="button" class="celulas L6 C4">
+				<input type="button" class="celulas L6 C5">
+				<input type="button" class="celulas L6 C6">
+			</div>
+			<div class="blocks B6">
+				<input type="button" class="celulas L4 C7">
+				<input type="button" class="celulas L4 C8">
+				<input type="button" class="celulas L4 C9">
+				<input type="button" class="celulas L5 C7">
+				<input type="button" class="celulas L5 C8">
+				<input type="button" class="celulas L5 C9">
+				<input type="button" class="celulas L6 C7">
+				<input type="button" class="celulas L6 C8">
+				<input type="button" class="celulas L6 C9">
+			</div>
+			<div class="blocks B7">
+				<input type="button" class="celulas L7 C1">
+				<input type="button" class="celulas L7 C2">
+				<input type="button" class="celulas L7 C3">
+				<input type="button" class="celulas L8 C1">
+				<input type="button" class="celulas L8 C2">
+				<input type="button" class="celulas L8 C3">
+				<input type="button" class="celulas L9 C1">
+				<input type="button" class="celulas L9 C2">
+				<input type="button" class="celulas L9 C3">
+			</div>
+			<div class="blocks B8">
+				<input type="button" class="celulas L7 C4">
+				<input type="button" class="celulas L7 C5">
+				<input type="button" class="celulas L7 C6">
+				<input type="button" class="celulas L8 C4">
+				<input type="button" class="celulas L8 C5">
+				<input type="button" class="celulas L8 C6">
+				<input type="button" class="celulas L9 C4">
+				<input type="button" class="celulas L9 C5">
+				<input type="button" class="celulas L9 C6">
+			</div>
+			<div class="blocks B9">
+				<input type="button" class="celulas L7 C7">
+				<input type="button" class="celulas L7 C8">
+				<input type="button" class="celulas L7 C9">
+				<input type="button" class="celulas L8 C7">
+				<input type="button" class="celulas L8 C8">
+				<input type="button" class="celulas L8 C9">
+				<input type="button" class="celulas L9 C7">
+				<input type="button" class="celulas L9 C8">
+				<input type="button" class="celulas L9 C9">
+			</div>
+			<button id="limpar">limpar</button>
+		</div>
+
+		
+		
+		<div id="toolbar">
+			<div style="display=inline;">
+				<button id="B1" class="picker">1</button>
+				<button id="B2" class="picker">2</button>
+				<button id="B3" class="picker">3</button>
+			</div>
+			<div style="display=inline;">
+				<button id="B4" class="picker">4</button>
+				<button id="B5" class="picker">5</button>
+				<button id="B6" class="picker">6</button>
+			</div>
+			<div style="display=inline;">
+				<button id="B7" class="picker">7</button>
+				<button id="B8" class="picker">8</button>
+				<button id="B9" class="picker">9</button>
+				<button id="B_" class="picker"></button>
+			</div>
+		</div>
+
+		<p class="labell">Can you make it under 3 minutes?</p>
+		<p class="time btn-default" type="datetime" ></p>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+	</body>
+
+</html>

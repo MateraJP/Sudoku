@@ -1,0 +1,100 @@
+.celulas {
+	padding: 0px;
+	margin: 1px; 
+	font-size: 15px; 
+	height: 20px; 
+	width: 20px; 
+	text-align: center; 
+	vertical-align: center;
+}
+
+.picker {
+	padding: 0px;
+	margin: 1px; 
+	font-size: 15px; 
+	height: 20px; 
+	width: 20px; 
+	text-align: center; 
+	border-radius: 5PX;
+}
+
+#toolbar {
+	position: absolute;
+	display:block;
+	top: 0;
+	left:0;
+
+	padding: 3px;
+	border: 1px solid black;
+	background: -webkit-linear-gradient(top, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	border-radius: 5px;
+	height: 76px;
+	width: 110px;
+}
+
+.blocks {
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 0px;
+	padding: 1px;
+	height: 70px; 
+	width: 70px; 
+}
+
+.game {
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;	
+	height: 212px; 
+	width: 213px; 
+	margin: 0px;
+	padding: 1px;
+	top: 35%;
+	left: 20%; 
+}
+
+#limpar {
+	width:213px;
+	height:20px;
+	font-size:15px;
+} 
+
+p {
+	position: absolute;
+	font-family: "Times New Roman", Georgia, Serif;
+	font-size: 40px;
+
+	top: 10%;
+	left: 25%; 	
+}
+.time {
+	height: 50px;
+	width: 100px;
+	text-align: center;
+	top: 15%;
+	left: 35%;
+	border: 1px solid black;
+	border-radius: 5px;	
+}
+
+
+body {
+	background-repeat: no-repeat;
+	background-image: url("imgs/sideshow view.png");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center; 
+}
+
+@media screen and (min-width: 750px) {
+
+	background-image: url("imgs/logo.jpg");
+}
+
+@media screen and (min-width: 500px) {
+
+	background-image: url("imgs/hugin Bender.jpg");
+}
+
